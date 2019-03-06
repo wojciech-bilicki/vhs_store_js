@@ -1,0 +1,43 @@
+$(document)
+    .on("click", ".download-mp3, .download-mp4, .videos, .audio-streams, .video-streams", function(e){
+        e.preventDefault();
+    	var getVidId = $(this).closest("[data-vid-id]");
+    	var DataVidId = getVidId.attr("data-vid-id");
+    	var loadUrlSuffix = "&format=mp3";
+    	$(".dl-line-dashed[data-vid-id=" + DataVidId + "]").show();
+    	$(".stream-buttons").hide();
+    	$(".dl-line-dashed-streams[data-vid-id=" + DataVidId + "]").hide();
+		if ($(this).hasClass('download-mp4') || $(this).hasClass('videos') || $(this).hasClass('audio-streams') || $(this).hasClass('video-streams'))
+    	{
+    		$(".stream-buttons[data-vid-id=" + DataVidId + "]").show();
+    		$(".dl-line-dashed-streams[data-vid-id=" + DataVidId + "]").show();
+    	}
+    	if ($(this).hasClass('download-mp4') || $(this).hasClass('videos'))
+    	{
+    		var loadUrlSuffix = "&format=mp4&streams=videos";
+		}
+    	if ($(this).hasClass('audio-streams'))
+    	{
+    		var loadUrlSuffix = "&format=mp4&streams=audiostreams";
+		}
+    	if ($(this).hasClass('video-streams'))
+    	{
+    		var loadUrlSuffix = "&format=mp4&streams=videostreams";
+		}
+    	$(".download-result[data-vid-id=" + DataVidId + "]").html($(".download-loading[data-vid-id=" + DataVidId + "]").html()).show();
+    	$(".download-result[data-vid-id=" + DataVidId + "]").load(ajaxUrlBase + "@grab?vidID=" + DataVidId + loadUrlSuffix);
+    })
+	.on("click", ".download-mp3-url", function(e) {
+		e.preventDefault();
+		var ajaxBase = ajaxUrlBase;
+		var urlParts = $(this).attr('href').split(ajaxBase);
+		if (urlParts[0] == $(this).attr('href'))
+		{
+			ajaxBase = ajaxUrlBase.replace(/([^\/]+\/)$/, "");
+			urlParts = $(this).attr('href').split(ajaxBase);
+		}
+		var urlParts = urlParts[1].split('/');
+		//console.log(urlParts);
+		urlParts.splice(4, 0, $($(this).parent().find("#stime")[0]).val(), $($(this).parent().find("#etime")[0]).val());
+		window.open(ajaxBase + urlParts.join('/'));
+	});

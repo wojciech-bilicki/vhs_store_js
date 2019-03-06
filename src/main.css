@@ -1,0 +1,45 @@
+/* selector {
+  property: property_value
+} */
+
+html {
+  font-family: 'Acme', sans-serif;
+  background-color: rgb(203, 102, 229);
+}
+
+div {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+}
+
+#first-paragraph {
+  color: blue;
+  font-size: 25px;
+}
+
+img {
+    width: 50%;
+    height: 40%;
+}
+
+a {
+  display: block;
+}
+
+.so-cool-list-item {
+  background-color: rgb(109, 173, 56);
+}
+
+a:hover {
+  cursor: pointer;
+  color: pink;
+}
+
+input[type="text"] {
+  color: yellowgreen;
+}

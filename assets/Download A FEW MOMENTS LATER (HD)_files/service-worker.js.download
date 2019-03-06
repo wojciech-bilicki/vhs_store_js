@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="YouTube Mp4 is the best online YouTube to Mp4 converter. Convert and download your favourite YouTube video&#039;s for free in webm, mp4, and 3gp formats.">
+	<meta name="keywords" content="YouTube, Converter, Fast, Convert YouTube to Mp4, Free YouTube to Mp4, YouTube video to Mp4, Converting YouTube to Mp4, YouTube to Mp4 free Converter, Videos to Mp4, YouTube to WEBM, YouTube to M4A, YouTube to 3GP" />
+	<meta name="author" content="YouTube to MP4">
+	<meta property="og:title" content="Youtube to MP4 Video Converter and Downloader" />
+	<meta property="og:description" content="YouTube Mp4 is the best online YouTube to Mp4 converter. Convert and download your favourite YouTube video&#039;s for free in webm, mp4, and 3gp formats." />
+	<meta property="og:url" content="https://youtubemp4.to/" />
+	<meta property="og:image" content="https://youtubemp4.to/@shareimg/share-wYHE1i1gRok.png" />
+	<meta property="og:image:width" content="480" />
+	<meta property="og:image:height" content="246" />
+	<meta property="og:type" content="website" />
+	<title>Youtube to MP4 Video Converter and Downloader</title>
+	<link rel="alternate" href="https://youtubemp4.to/" hreflang="en" />
+	<link rel="alternate" href="https://youtubemp4.to/de/" hreflang="de" />
+	<link rel="alternate" href="https://youtubemp4.to/" hreflang="x-default" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link type="text/css" href="//youtubemp4.to/app/Templates/youtubemp4/assets/css/style2.css" rel="stylesheet">
+
+    <!-- Favicon and Mobile Icons -->
+    	<link rel="apple-touch-icon" sizes="57x57" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/favicon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="//youtubemp4.to/app/Templates/youtubemp4/assets/img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script>
+        var templateVars = {
+            // Template config vars for "result" ajax request
+            'flagCode' : '<span class="flag-icon flag-icon-%s"></span> ',
+            'ajaxLoadImg' : 'ajax-loader.gif'
+            
+                    };
+        var templateVarsQueryStr = '';
+        for (var prop in templateVars)
+        {
+            templateVarsQueryStr += prop + '=' + encodeURI(templateVars[prop]) + '&';
+        }
+        var ajaxUrlBase = '//youtubemp4.to/';
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="//youtubemp4.to/app/Templates/youtubemp4/assets/js/app.js?v=1017405020" data-path="//youtubemp4.to/app/Templates/youtubemp4/" id="app-js"></script>
+    <script src="service-worker.js" data-cfasync="false" async></script>
+</head>
+<body>
+
+<div id="notification" class="notification">The video download link has expired. Please try again.</div>
+<div class="container">
+    <div class="background-blur" style="background-image: url('//youtubemp4.to/app/Templates/youtubemp4/assets/img/guitar.jpg'); background-position: center;"></div>
+    <div class="page-header">
+        <h1 class="branding text-blur"><a href="//youtubemp4.to">Youtube<span>Mp4</span></a></h1>
+        <p class="callout text-blur">The easiest YouTube to video converter on the internet. Watch and download your favorite videos easily.
+            <br/><strong>Start by pasting the YouTube link in the box below and click convert!</strong></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="transparent-container form-container">
+                <p class="form-tell">Youtube URL:&nbsp;&nbsp;<span>https://www.youtube.com/watch?v=jNQXAC9IVRw</span></p>
+                <form action="" method="post" class="form-url">
+                                        <input type="text" name="videoURL" id="videoURLJumbo" class="videoURL" placeholder="Paste YouTube link..." value="" />
+                    <button type="submit" name="submitForm" class="btn btn-default">Convert</button>
+                </form>
+                <p class="disclaimer">By using this service you agree to our <a href="">terms</a>.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="cold-md-12">
+        <div class="footer-social">
+            <span class="facebook-like"><iframe style="border:none; overflow:hidden; width:90px; height:21px;" src="https://www.facebook.com/plugins/like.php?href=http://youtubemp4.to&amp;layout=button_count&amp;show_faces=true&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=21"></iframe> </span>
+            <span class="twitter-share"><iframe class="tw" frameborder="0" style="width: 60px; height: 21px; border: none"  scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/tweet_button.html?url=http://youtubemp4.to&via=YoutubeMP4&text=Download your favorite YouTube video's in MP4, WEBM, M4A, and 3GP for free on YouTubeMp4.to.&count=horizontal"></iframe></span>
+        </div>
+        <p class="footer-copyright text-blur">&copy; Copyright 2019&nbsp;&nbsp;-&nbsp;&nbsp;<a href="//youtubemp4.to">YouTubemp4.to</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a target="_blank" href="https://ytoffline.net">YouTube Downloader</p>
+    </div>
+</div>
+
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<script data-rocketsrc="http://platform.twitter.com/widgets.js"></script>
+
+<script>
+    $( document ).ready(function() {
+        setTimeout(function() {
+            $('#notification').fadeOut('fast');
+        }, 3500); // <-- time in milliseconds
+
+        $('#videoURLJumbo').change(function() {
+            $('#videoURL').val($(this).val());
+        });
+    });
+</script>
+
+<script>
+    //Google Analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-106753111-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+<script type="text/javascript">
+	var script = document.createElement('script');
+	script.type = "text/javascript";
+	script.async = true;
+	script.src = 'http' + (location.protocol === 'https:' ? 's' : '') + '://www.modulepush.com/01ff95e6abdd6b2853b715165d50efd7/invoke.js';
+	document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+
+</body>
+</html>
